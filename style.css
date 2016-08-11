@@ -1,0 +1,48 @@
+/*ELEMENTS*/
+body {}
+
+
+h1 { font-family: "DeJaVu Sans Mono" }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*CLASSES*/
+.container {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.pop {
+  width: 58%;
+  padding-top: 4px;
+  border-radius: 20px;
+  margin-top: 20px;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  transition: background 1s;
+}
+.pop:hover {
+  background: gold;
+}
+
+/*IDS*/
+
+#request { margin: 20px auto;}
+
+#request span{
+  font-size: 2.5em;
+  -webkit-transition: text-shadow 0.3s;
+  -moz-transition: text-shadow 0.3s;
+  transition: text-shadow 0.3s;
+}
+
+#request span:hover {
+  text-shadow: 0 10px 7px #6c7a89;
+}
+
+#request span:active {
+  text-shadow: none;
+}
