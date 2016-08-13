@@ -4,7 +4,7 @@ $(function() {
   var weatherapi = 'http://api.openweathermap.org/data/2.5/weather';
   var apikey = '25c1e185ccfb414ffc4061313e567ab2';
 
-  //Weather API Info
+  //Weather API Info {:editable}
   var weatherAPICountry = $("#country");
   var weatherAPIWeather = $("#currentweather");
   var weatherAPIWeatherIcon = $("#weather-icon");
@@ -24,13 +24,13 @@ $(function() {
 
       //  Weather API output
 
-      // country output
+      // country output {:editable}
        weatherAPICountry.text(data.sys.country);
-      //  Weather output
+      //  Weather output {:editable}
        weatherAPIWeather.text(data.weather[0].description);
-      //  Weather Icon output
+      //  Weather Icon output {:editable}
        weatherAPIWeatherIcon.attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
-      //  Temperature output
+      //  Temperature output {:editable}
        weatherAPITemperature.text(data.main.temp);
     });
   }
