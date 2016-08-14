@@ -5,8 +5,8 @@ $(function() {
   var $output_weather = $('#output_weather');
 
 
-  var locatorapi = 'http://api.wipmania.com/jsonp';
-  var weatherapi = 'http://api.openweathermap.org/data/2.5/weather';
+  var locatorapi = 'https://api.wipmania.com/jsonp';
+  var weatherapi = 'https://api.openweathermap.org/data/2.5/weather';
   var apikey = '25c1e185ccfb414ffc4061313e567ab2';
 
 
@@ -35,7 +35,7 @@ $(function() {
       //  Weather output {:editable}
        weatherAPIWeather.text(data.weather[0].description);
       //  Weather Icon output {:editable}
-       weatherAPIWeatherIcon.attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
+       weatherAPIWeatherIcon.attr("src", "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
       //  Temperature output {:editable}
        weatherAPITemperature.text(data.main.temp.toFixed(1) + "Celcius");
     });
