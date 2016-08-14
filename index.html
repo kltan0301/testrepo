@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>ranDOM</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="normalize.css" charset="utf-8">
-    <link rel="stylesheet" href="style.css" charset="utf-8">
-  </head>
-  <body>
-    <div class="container pop">
-      <a href="https://github.com/junkaiii/ranDOM">
-        <h1>Unit 3, 1<sup><u>st</u></sup> Assignment</h1>
-        <p><small>Group 3</small></p>
-      </a>
-        <p>______________________________________________</p>
+
+<head>
+  <meta charset="utf-8">
+  <title>ranDOM</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="normalize.css" charset="utf-8">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link async href="http://fonts.googleapis.com/css?family=Baumans" rel="stylesheet" type="text/css" />
+  <!-- <link rel="stylesheet" href="style.css" charset="utf-8"> -->
+  <link rel="stylesheet" href="style.css" charset="utf-8">
+</head>
+
+<body>
+  <div id="t1">
+    <div id="t2">
+      <div id="t3">
+        <div id="t4">
+          <section>
+            <ul>
+              <a href="#t1">
+                <li class="icon fa fa-home"></li>
+              </a>
+              <a href="#t2">
+                <li class="icon fa fa-commenting-o" id="dos"></li>
+              </a>
+              <a href="#t3">
+                <li class="icon fa fa-sun-o" id="tres"></li>
+              </a>
+              <a href="#t4">
+                <li class="icon fa fa-users" id="cuatro"></li>
+              </a>
+            </ul>
+            <div class="page" id="p1">
+              <li class="icon fa fa-home"><span class="title">Home</span>
+                <p id="clock">HH:MM:SS</p>
+              </li>
+            </div>
+
+            <div class="page" id="p2">
+
+              <div id="request" class="enjoy-css center">Generate Quote</div>
+
+              <div id="output" class="output-message pop">Ready for the first code? </div>
+
+              <div id="wikibio" class="output-message pop">Know who is the Author?</div>
+
+            </div>
+            <div class="page" id="p3">
+              <li class="icon fa fa-sun-o"><span class="title">Weather</span></li>
+            </div>
+
+            <div class="page" id="p4">
+              <a href="https://github.com/junkaiii/ranDOM">
+                <h1>Our members</h1>
+              </a>
+            </div>
+          </section>
+
+        </div>
+      </div>
     </div>
-
-
-    <div class="container">
-      <div id="request"><span>▼</span></div>
-      <div id="output"></div>
-      <div id="wikibio"></div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="script_nick.js"></script>
-  </body>
-
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="script_nick.js"></script>
 </html>
