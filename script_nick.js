@@ -5,8 +5,9 @@ $(function() {
   var $output_weather = $('#output_weather');
 
 
-  var locatorapi = 'https://api.wipmania.com/jsonp';
-  var weatherapi = 'http://api.openweathermap.org/data/2.5/weather';
+  // var locatorapi = 'https://api.wipmania.com/jsonp';
+  // var weatherapi = 'https://api.openweathermap.org/data/2.5/weather';
+  var weatherapi = "https://community-open-weather-map.p.mashape.com/weather";
   var apikey = '25c1e185ccfb414ffc4061313e567ab2';
 
 
@@ -21,7 +22,8 @@ $(function() {
 
       url: weatherapi,
       dataType: 'json',
-      data: {lat:loclat, lon:loclon, units:'metric', APPID:apikey}
+      headers: {'X-Mashape-Key': 'ZZdWwwpLxlmsh4gztf1wv4yL6pLBp1Km2bVjsngmxiEKPQ39vr'},
+      data: {lat:loclat, lon:loclon, units:'metric', APPID:apikey, lang:'en'}
       // 'http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}',
 
     }).done(function(data){
