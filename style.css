@@ -173,8 +173,12 @@ a {
   color: #BBCBCB;
 }
 
-
 /*IDS*/
+
+
+#clock{
+	font-size:30px;
+	}
 
 #wikibio {
   height: 40%;
