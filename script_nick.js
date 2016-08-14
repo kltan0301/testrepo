@@ -15,7 +15,7 @@ $(function() {
 
       url: weatherapi,
       dataType: 'json',
-      data: {lat:loclat, lon:loclon,units:'metric', APPID:apikey}
+      data: {lat:loclat, lon:loclon, units:'metric', APPID:apikey}
       // 'http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}',
 
     }).done(function(data){
