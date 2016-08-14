@@ -7,7 +7,8 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="normalize.css" charset="utf-8">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <link async href="http://fonts.googleapis.com/css?family=Baumans" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+  <link async href="http://fonts.googleapis.com/css?family=Baumans" rel="stylesheet" type="text/css"/>
   <!-- <link rel="stylesheet" href="style.css" charset="utf-8"> -->
   <link rel="stylesheet" href="style.css" charset="utf-8">
 </head>
@@ -18,6 +19,7 @@
       <div id="t3">
         <div id="t4">
           <section>
+
             <ul>
               <a href="#t1">
                 <li class="icon fa fa-home"></li>
@@ -32,6 +34,7 @@
                 <li class="icon fa fa-users" id="cuatro"></li>
               </a>
             </ul>
+
             <div class="page" id="p1">
               <li class="icon fa fa-home"><span class="title">Home</span>
                 <p id="clock">HH:MM:SS</p>
@@ -39,16 +42,19 @@
             </div>
 
             <div class="page" id="p2">
-
               <div id="request" class="enjoy-css center">Generate Quote</div>
-
               <div id="output" class="output-message pop">Ready for the first code? </div>
-
               <div id="wikibio" class="output-message pop">Know who is the Author?</div>
-
             </div>
+
             <div class="page" id="p3">
-              <li class="icon fa fa-sun-o"><span class="title">Weather</span></li>
+              <li class="icon wi wi-thermometer">
+                <span class="title">
+                  <div id="country"></div>
+                  <div id="currentweather"></div>
+                  <div id="temperature"></div>
+                  <img id="weather-icon">
+                </span></li>
             </div>
 
             <div class="page" id="p4">
@@ -56,13 +62,16 @@
                 <h1>Our members</h1>
               </a>
             </div>
-          </section>
 
+          </section>
         </div>
       </div>
     </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
   <script src="script.js"></script>
   <script src="script_nick.js"></script>
+
+
 </html>
