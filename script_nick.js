@@ -6,7 +6,7 @@ $(function() {
 
 
   var locatorapi = 'https://api.wipmania.com/jsonp';
-  var weatherapi = 'https://api.openweathermap.org/data/2.5/weather';
+  var weatherapi = 'http://api.openweathermap.org/data/2.5/weather';
   var apikey = '25c1e185ccfb414ffc4061313e567ab2';
 
 
@@ -41,15 +41,17 @@ $(function() {
     });
   }
 
-  $.ajax({
-    url: locatorapi,
-    dataType: 'jsonp'
-  }).done(function(data) {
-    weather(data.latitude, data.longitude);
-  }).fail(function(request, textStatus, errThrown) {
-    console.log('An error has occured during your request' + request.status + ' ' + textStatus + ' ' + errThrown);
+  // $.ajax({
+  //   url: locatorapi,
+  //   dataType: 'jsonp'
+  // }).done(function(data) {
+  //   weather(data.latitude, data.longitude);
+  // }).fail(function(request, textStatus, errThrown) {
+  //   console.log('An error has occured during your request' + request.status + ' ' + textStatus + ' ' + errThrown);
+  // });
+  navigator.geolocation.getCurrentPosition(function(position) {
+    weather(position.coords.latitude, position.coords.longitude);
   });
-
 
 
 });
