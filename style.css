@@ -177,7 +177,7 @@ a {
 
 
 #clock{
-	font-size:30px;
+  font: normal 25px/40px "Baumans";
 	}
 
 #wikibio {
